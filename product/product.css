@@ -1,0 +1,98 @@
+.t-shirt {
+    width: 450px;
+    height: 450px;
+}
+.star {
+    width: 20px;
+}
+.giam-gia {
+    background: #ee4d2d;
+    border-radius: 2px;
+    color: #fff;
+    font-size: .75rem;
+    font-weight: 600;
+    line-height: 1;
+    margin-left: 15px;
+    padding: 2px 4px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    width: 66px;
+    height: 15px;
+    align-items: center;
+    justify-content: center;
+}
+.cart-add {
+    background: rgba(255,87,34,.1);
+    border: 1px solid #ee4d2d;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .03);
+    color: #ee4d2d;
+    outline: 0;
+    overflow: visible;
+    position: relative;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    align-items: center;
+    border-radius: 2px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    justify-content: center;
+    outline: 0;
+    text-transform: capitalize;
+    direction: row;
+    width: 40%;
+}
+.cart-add:hover {
+    width: 45%;
+    height: auto;
+    transition: 1s;
+}
+.cart-add:not(:hover) {
+    width: 40%;
+    height: auto;
+    transition: 1s;
+}
+.img-cart {
+    height: 20px;
+    margin-right: 10px;
+    width: 20px;
+    border: 0;
+}
+.buy-now {
+    background: #ee4d2d;
+    color: #fff;
+    outline: 0;
+    overflow: visible;
+    position: relative;
+    max-width: 250px;
+    height: 48px;
+    padding: 0 20px;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    align-items: center;
+    border: 0;
+    border-radius: 2px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .09);
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    justify-content: center;
+    outline: 0;
+    text-transform: capitalize;
+}
+.buy-now:hover {
+    width: 20%;
+    transition: 1s;
+}
+.buy-now:not(:hover) {
+    width: 18%;
+    transition: 1s;
+}

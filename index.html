@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping webstie - Toan</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <!-- Phần header đầu trang -->
+    <header class="header-main-page">
+        <!-- container để chứa header (màu cam) -->
+        <div class="container-lg">
+            <!-- phần đầu của header(header được chia ra 3 phần, phần đầu là head-báic) -->
+            <div class="head-basic">
+                <!-- phần bên trái  -->
+                <div class="d-flex justify-content-between">
+                    <ul class="flex flex-nowrap" id="a">
+                        <a class="item nav-link list-item no-underline hover:underline mt-3 mb-2" href="#" id="danh-muc-hang">Danh mục hàng</a>
+                        <a class="item nav-link list-item no-underline hover:underline mt-3 mb-2" href="#" id="tro-thanh-doi-tac">Trở thành đối tác</a>
+                        <a class="item mt-2 mb-2">Theo dõi chúng tôi trên</a>
+                        <box-icon class="ml-3 mt-3 mb-2 mr-2" name='facebook-circle' type='logo' color='#ffffff'></box-icon>
+                        <box-icon class="mt-3 mb-2" type='logo' name='youtube' color='#ffffff'></box-icon>
+                    </ul>
+                    <!-- phần bên phải -->
+                    <div class="d-flex">
+                        <ul class="flex flex-nowrap">
+                            <box-icon class="ml-3 mt-3 mb-2 mr-1" name='bell' flip='horizontal' animation='tada' color='#ffffff' ></box-icon>
+                            <a href="#" class="nav-link list-item no-underline hover:underline mt-3 mb-2 mr-2">Thông báo</a>
+
+
+                            <box-icon name='help-circle' animation='tada' color='#ffffff' class="ml-3 mt-3 mb-2 mr-1"></box-icon>
+                            <a href="#" class="nav-link list-item no-underline hover:underline mt-3 mb-2 mr-6">Help</a>
+
+
+                            <a href="sign-up.html" class="nav-link list-item no-underline hover:underline mt-3 mb-2 font-bold">Đăng kí</a>
+                            <a href="sign-in.html" class="item nav-link list-item no-underline hover:underline mt-3 mb-2 font-bold">Đăng nhập</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phần ở giữa head bao gồm logo, tìm kiếm,.... -->
+
+            <div class="head-main">
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <a href="#">
+                                <img src="logo-full-white.png" alt="logo-brand" class="item logo">
+
+                            </a>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="search-bar">
+                                <input type="email" class="form-control w-42" id="s-in-bar" placeholder="This is search bar">
+                                <button class="btn-s w-20">Tìm</button>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <a href="#"><box-icon class="cart mt-2" name='cart' color='#ffffff' ></box-icon></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phần cuối header bao gồm thông tin phụ -->
+            <div class="i-head">
+                <div class="container text-center">
+                    <a class="i-h-last mr-2" href="product/over-view-pro.html">Áo 0 đồng</a>
+                    <a class="i-h-last mr-2" href="product/over-view-phone.html">Điện thoại 1k</a>
+                    <a class="i-h-last mr-2" href="#">Áo 0 đồng nữ</a>
+                    <a class="i-h-last mr-2" href="#">Nước hoa nam 99k</a>
+                    <a class="i-h-last mr-2" href="#">máy chơi game 1k</a>
+                    <a class="i-h-last mr-2" href="#">quạt cầm tay mini</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <main>
+        <div class="container-lg">
+            <!-- phần trên của thân trang web (gồm ảnh, carosel) -->
+            <div class="intro-main pt-4">
+                <div class="container">
+                    <!-- chia cột -->
+                    <div class="row pb-2">
+                        <div class="col-md-8">
+                            <!-- chia cho carosel 8 phần(làm carosel) -->
+                            <div id="carouselExampleIndicators" class="carousel slide">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <!-- các ảnh trong carosel -->
+                                    <div class="carousel-item active">
+                                        <img src="https://cf.shopee.vn/file/vn-50009109-278b83a8a9f2aea170ef31cbd66cfcf1_xxhdpi" class="d-block w-100" alt="https://cf.shopee.vn/file/vn-50009109-adecae4a1716b70953e7795b3e26729b_xhdpi">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="https://cf.shopee.vn/file/vn-50009109-942ba25380b92b2c3d4a56c80cfb26a9_xxhdpi" class="d-block w-100" alt="https://cf.shopee.vn/file/vn-50009109-adecae4a1716b70953e7795b3e26729b_xhdpi">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="https://cf.shopee.vn/file/vn-50009109-ff58a8a1da6a506988085d2dbff91176_xxhdpi" class="d-block w-100" alt="https://cf.shopee.vn/file/vn-50009109-adecae4a1716b70953e7795b3e26729b_xhdpi">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="https://cf.shopee.vn/file/vn-50009109-02bf548ed1994490e3813dcd73f0a0a6_xxhdpi" class="d-block w-100" alt="https://cf.shopee.vn/file/vn-50009109-adecae4a1716b70953e7795b3e26729b_xhdpi">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="https://cf.shopee.vn/file/vn-50009109-3b4844af326ff3b9c1e1793d0dbda9f3_xxhdpi" class="d-block w-100" alt="https://cf.shopee.vn/file/vn-50009109-adecae4a1716b70953e7795b3e26729b_xhdpi">
+                                    </div>
+                                </div>
+                                <!-- nút lùi lại < -->
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <!-- nút tiến tới > -->
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- 2 ảnh phụ kế bên carosel -->
+                        <div class="col-md-4 flex flex-col">
+                            <img class="pb-1" src="https://cf.shopee.vn/file/vn-50009109-adecae4a1716b70953e7795b3e26729b_xhdpi" alt="img1">
+                            <img class="" src="https://cf.shopee.vn/file/vn-50009109-958255fee8537927717127f3be6d4950_xhdpi" alt="img2">
+                        </div>
+                    </div>
+                    <!-- các deal, giảm giá, các box tiêu mục -->
+                    <div class="container flex justify-content-center">
+
+                        <div class="deal flex flex-col text-center pr-2">
+                            <a class="v-e p-4" href="voucher-extra"><img src="https://cf.shopee.vn/file/vn-50009109-11d9732a464d895d3699ca40431d0bfd_xhdpi" alt=""></a>
+                            <p>Voucher Extra</p>
+                        </div>
+    
+                        <div class="deal flex flex-col text-center pr-2">
+                            <a class="v-e p-4" href="hang-quoc-te"><img src="https://cf.shopee.vn/file/a08ab28962514a626195ef0415411585_xhdpi" alt=""></a>
+                            <p>Hàng quốc tế</p>
+                        </div>
+                        
+                        <div class="deal flex flex-col text-center pr-2">
+                            <a class="v-e p-4" href="ma-giam-gia"><img src="https://cf.shopee.vn/file/vn-50009109-8a387d78a7ad954ec489d3ef9abd60b4_xhdpi" alt=""></a>
+                            <p>Mã Giảm Giá</p>
+                        </div>
+
+                        <div class="deal flex flex-col text-center pr-2">
+                            <a class="v-e p-4" href="dich-vu"><img src="https://cf.shopee.vn/file/9df57ba80ca225e67c08a8a0d8cc7b85_xhdpi" alt=""></a>
+                            <p>Dịch vụ</p>
+                        </div>
+
+                        <div class="deal flex flex-col text-center pr-2">
+                            <a class="v-e p-4" href="free-ship"><img src="https://cf.shopee.vn/file/vn-50009109-c7a2e1ae720f9704f92f72c9ef1a494a_xhdpi" alt=""></a>
+                            <p>Free ship</p>
+                        </div>
+
+                            
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- phần thân chính, gồm danh mục -->
+            <div class="container-fluid main-out">
+                <!-- phần danh mục -->
+                <div class="main container-lg" style="opacity: 1;">
+                    <div></div>
+                    <!-- phần đầu của phần danh mục -->
+                    <div class="head-section-content">
+                        DANH MỤC
+                    </div>
+                    <!-- các danh mục (phần bao quanh bên ngoài) -->
+                    <div class="content">
+                        <!-- <div class="row">
+                            <div class="col-sm-2">
+                                <div class="card">
+                                    <img class="img-thoi-trang-nam" src="https://down-vn.img.susercontent.com/file/687f3967b7c2fe6a134a2c11894eea4b_tn" class="card-img-top" alt="Thời trang nam">
+                                    <div class="card-body">
+                                        <a href="#" class="card-text text-sm text-center">Thời trang nam</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div> -->
+                        <!-- danh mục -->
+                        <div class="content-1">
+                            <div></div>
+                            <div class="content-in">
+                                <a href="#">
+                                    <img src="https://down-vn.img.susercontent.com/file/687f3967b7c2fe6a134a2c11894eea4b_tn" alt="img-danh-muc" class="img-danh-muc">
+                                    <p class="text-center">
+                                        <a href="#">Thời trang nam</a>
+                                    </p>
+
+                                </a>
+
+                            </div>
+                            <div class="content-in">
+                                <a href="#">
+                                    <img src="	https://down-vn.img.susercontent.com/file/c3f3edfaa9f6dafc4825b77d8449999d_tn" alt="img-danh-muc" class="img-danh-muc">
+                                    <p class="text-center">
+                                        <a href="#">Laptop và máy tính</a>
+                                    </p>
+
+                                </a>
+
+                            </div>
+                            <div class="content-in">
+                                <a href="#">
+                                    <img src="https://down-vn.img.susercontent.com/file/ec14dd4fc238e676e43be2a911414d4d_tn" alt="img-danh-muc" class="img-danh-muc">
+                                    <p class="text-center">
+                                        <a href="#">Máy chụp hình</a>
+                                    </p>
+
+                                </a>
+                            </div>
+
+
+                            <div class="content-in">
+                                <a href="#">
+                                    <img src="https://down-vn.img.susercontent.com/file/86c294aae72ca1db5f541790f7796260_tn" alt="img-danh-muc" class="img-danh-muc">
+                                    <p class="text-center">
+                                        <a href="#">Đồng hồ</a>
+                                    </p>
+
+                                </a>
+                            </div>
+                            <div class="content-in">
+                                <a href="#">
+                                    <img src="https://down-vn.img.susercontent.com/file/75ea42f9eca124e9cb3cde744c060e4d_tn" alt="img-danh-muc" class="img-danh-muc">
+                                    <p class="text-center">
+                                        <a href="#">Thời trang nữ</a>
+                                    </p>
+
+                                </a>
+                            </div>
+                            <div class="content-in">
+                                <a href="#">
+                                    <img src="https://down-vn.img.susercontent.com/file/36013311815c55d303b0e6c62d6a8139_tn" alt="img-danh-muc" class="img-danh-muc">
+                                    <p class="text-center">
+                                        <a href="#">Sách</a>
+                                    </p>
+
+                                </a>
+                            </div>
+                            <div class="content-in">
+                                <a href="#">
+                                    <img src="https://down-vn.img.susercontent.com/file/6cb7e633f8b63757463b676bd19a50e4_tn" alt="img-danh-muc" class="img-danh-muc">
+                                    <p class="text-center">
+                                        <a href="#">Thể thao</a>
+                                    </p>
+
+                                </a>
+                            </div>
+                            <div class="content-in">
+                                <a href="#">
+                                    <img src="https://down-vn.img.susercontent.com/file/31234a27876fb89cd522d7e3db1ba5ca_tn" alt="img-danh-muc" class="img-danh-muc">
+                                    <p class="text-center">
+                                        <a href="#">Điện thoại</a>
+                                    </p>
+
+                                </a>
+                            </div>
+                            <div class="content-in">
+                                <a href="#">
+                                    <img src="https://down-vn.img.susercontent.com/file/74ca517e1fa74dc4d974e5d03c3139de_tn" alt="img-danh-muc" class="img-danh-muc">
+                                    <p class="text-center">
+                                        <a href="#">Giày dép nam</a>
+                                    </p>
+
+                                </a>
+                            </div>
+                            <div class="content-in">
+                                <a href="#">
+                                    <img src="	https://down-vn.img.susercontent.com/file/fa6ada2555e8e51f369718bbc92ccc52_tn" alt="img-danh-muc" class="img-danh-muc">
+                                    <p class="text-center">
+                                        <a href="#">Túi ví nữ</a>
+                                    </p>
+
+                                </a>
+                            </div>
+                            <div class="content-in">
+                                <a href="#">
+                                    <img src="https://down-vn.img.susercontent.com/file/49119e891a44fa135f5f6f5fd4cfc747_tn" alt="img-danh-muc" class="img-danh-muc">
+                                    <p class="text-center">
+                                        <a href="#">Sức khỏe</a>
+                                    </p>
+
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+                <!-- Phần GỢI Ý HÔM NAY -->
+                <div class="main container-lg" style="height: auto;">
+                    <div class="head-section-content goi-y" style="justify-content: center">
+                        GỢI Ý HÔM NAY
+                    </div>
+                </div>
+                <!-- phần chứa tất cả sane phẩm gợi ý -->
+                <div class="container-lg flex">
+                    <!-- sản phẩm 1  -->
+                    
+                    <div class="sp-goi-y p-2 m-2">
+                        <!-- sản phẩm -->
+                        <div class="sp-goi-y-cov p-2 m-1 flex">
+                            <a href="product/product1.html" class="m-content-sp">
+                                <div style="width: 186px; height: 290px; background-color: aliceblue;" class="san-pham-goi-y-in">
+                                    <div class="sp-pic">
+                                        <img src="https://down-vn.img.susercontent.com/file/vn-11134211-7qukw-lh0a8bgxmwvne3" alt="">
+                                    </div>
+                                    <div class="sp-content p-2">
+                                        <p class="text-sm">
+                                            Áo Thun Ngắn Tay Co Giãn Tạo Cảm Giác Thoải Mái Khi Mặc Thời Trang Zenkocs3 MEN TOP 221V2
+                                        </p>
+                                        <div class="sp-foot-content">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="flex flex-nowrap">
+                                                    <p class="text-rose-600">đ</p>
+                                                    <p class="text-rose-600">1.000</p>
+                                                </div>
+                                                <div style="font-size: 13px;" class="d-flex text-zinc-400">
+                                                    Đã bán 100k
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>   
+                    </div>
+
+
+                    <!-- sản phẩm 2 -->
+                    <div class="sp-goi-y p-2 m-2">
+                        <!-- sản phẩm -->
+                        <div class="sp-goi-y-cov p-2 m-1 flex">
+                            <a href="product/product2.html" class="m-content-sp">
+                                <div style="width: 186px; height: 290px; background-color: aliceblue;" class="san-pham-goi-y-in">
+                                    <div class="sp-pic">
+                                        <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lufuddxcv9k5ff" alt="">
+                                    </div>
+                                    <div class="sp-content p-2">
+                                        <p class="text-sm">
+                                            OWEN - Áo polo ngắn tay Body Fit màu Trắng chất liệu CVC Spandex - APV233173
+                                        </p>
+                                        <div class="sp-foot-content">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="flex flex-nowrap">
+                                                    <p class="text-rose-600">đ</p>
+                                                    <p class="text-rose-600">1.000</p>
+                                                </div>
+                                                <div style="font-size: 13px;" class="d-flex text-zinc-400">
+                                                    Đã bán 100k
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="sp-goi-y p-2 m-2">
+                        <!-- sản phẩm -->
+                        <div class="sp-goi-y-cov p-2 m-1 flex">
+                            <a href="product/product3.html" class="m-content-sp">
+                                <div style="width: 186px; height: 290px; background-color: aliceblue;" class="san-pham-goi-y-in">
+                                    <div class="sp-pic">
+                                        <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lrol6kavr6hl42" alt="">
+                                    </div>
+                                    <div class="sp-content p-2">
+                                        <p class="text-sm">
+                                            Áo Thun Polo Nam Thêu Chữ U,Chất Liệu Thấm Hút Mồ Hôi,Cổ Phối Màu
+                                        </p>
+                                        <div class="sp-foot-content">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="flex flex-nowrap">
+                                                    <p class="text-rose-600">đ</p>
+                                                    <p class="text-rose-600">1.000</p>
+                                                </div>
+                                                <div style="font-size: 13px;" class="d-flex text-zinc-400">
+                                                    Đã bán 100k
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="sp-goi-y p-2 m-2">
+                        <!-- sản phẩm -->
+                        <div class="sp-goi-y-cov p-2 m-1 flex">
+                            <a href="product/product4.html" class="m-content-sp">
+                                <div style="width: 186px; height: 290px; background-color: aliceblue;" class="san-pham-goi-y-in">
+                                    <div class="sp-pic">
+                                        <img src="https://down-vn.img.susercontent.com/file/sg-11134201-23020-a0yntbpda1mvb3" alt="">
+                                    </div>
+                                    <div class="sp-content p-2">
+                                        <p class="text-sm">
+                                            Áo Polo Phối Đen Trắng chất cotton su
+                                        </p>
+                                        <div class="sp-foot-content">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="flex flex-nowrap">
+                                                    <p class="text-rose-600">đ</p>
+                                                    <p class="text-rose-600">1.000</p>
+                                                </div>
+                                                <div style="font-size: 13px;" class="d-flex text-zinc-400">
+                                                    Đã bán 100k
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="sp-goi-y p-2 m-2">
+                        <!-- sản phẩm -->
+                        <div class="sp-goi-y-cov p-2 m-1 flex">
+                            <a href="product/product5.html" class="m-content-sp">
+                                <div style="width: 186px; height: 290px; background-color: aliceblue;" class="san-pham-goi-y-in">
+                                    <div class="sp-pic">
+                                        <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lscndw3ovxqx90" alt="">
+                                    </div>
+                                    <div class="sp-content p-2">
+                                        <p class="text-sm">
+                                            Điện thoại Apple iPhone 15 Pro 128GB
+                                        </p>
+                                        <div class="sp-foot-content">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="flex flex-nowrap">
+                                                    <p class="text-rose-600">đ</p>
+                                                    <p class="text-rose-600">1.000</p>
+                                                </div>
+                                                <div style="font-size: 13px;" class="d-flex text-zinc-400">
+                                                    Đã bán 100k
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+
+
+                    <div class="sp-goi-y p-2 m-2">
+                        <!-- sản phẩm -->
+                        <div class="sp-goi-y-cov p-2 m-1 flex">
+                            <a href="product/product6.html" class="m-content-sp">
+                                <div style="width: 186px; height: 290px; background-color: aliceblue;" class="san-pham-goi-y-in">
+                                    <div class="sp-pic">
+                                        <img src="https://down-vn.img.susercontent.com/file/242a10dd98cc056cbd73d12fdf280b9b" alt="">
+                                    </div>
+                                    <div class="sp-content p-2">
+                                        <p class="text-sm">
+                                            Điện thoại Apple iPhone 13 128GB
+                                        </p>
+                                        <div class="sp-foot-content">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="flex flex-nowrap">
+                                                    <p class="text-rose-600">đ</p>
+                                                    <p class="text-rose-600">1.000</p>
+                                                </div>
+                                                <div style="font-size: 13px;" class="d-flex text-zinc-400">
+                                                    Đã bán 100k
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+
+
+
+                    
+
+
+                </div>
+
+
+
+                <div class="container-lg flex pb-4">
+                    <!-- sản phẩm 1  -->
+                    
+                    <div class="sp-goi-y p-2 m-2">
+                        <!-- sản phẩm -->
+                        <div class="sp-goi-y-cov p-2 m-1 flex">
+                            <a href="product/product7.html" class="m-content-sp">
+                                <div style="width: 186px; height: 290px; background-color: aliceblue;" class="san-pham-goi-y-in">
+                                    <div class="sp-pic">
+                                        <img src="	https://down-vn.img.susercontent.com/file/e97b579f7fdfd7cc61089fe234404c22" alt="">
+                                    </div>
+                                    <div class="sp-content p-2">
+                                        <p class="text-sm">
+                                            Máy tính bảng Apple iPad mini 6 8.3-inch Wi-Fi 64GB
+                                        </p>
+                                        <div class="sp-foot-content">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="flex flex-nowrap">
+                                                    <p class="text-rose-600">đ</p>
+                                                    <p class="text-rose-600">1.000</p>
+                                                </div>
+                                                <div style="font-size: 13px;" class="d-flex text-zinc-400">
+                                                    Đã bán 100k
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>   
+                    </div>
+
+
+                    <!-- sản phẩm 2 -->
+                    <div class="sp-goi-y p-2 m-2">
+                        <!-- sản phẩm -->
+                        <div class="sp-goi-y-cov p-2 m-1 flex">
+                            <a href="product/product8.html" class="m-content-sp">
+                                <div style="width: 186px; height: 290px; background-color: aliceblue;" class="san-pham-goi-y-in">
+                                    <div class="sp-pic">
+                                        <img src="https://down-vn.img.susercontent.com/file/sg-11134201-23020-kp1wp9s91cnv9e" alt="">
+                                    </div>
+                                    <div class="sp-content p-2">
+                                        <p class="text-sm">
+                                            Apple iPhone 14 Plus 128GB
+                                        </p>
+                                        <div class="sp-foot-content">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="flex flex-nowrap">
+                                                    <p class="text-rose-600">đ</p>
+                                                    <p class="text-rose-600">1.000</p>
+                                                </div>
+                                                <div style="font-size: 13px;" class="d-flex text-zinc-400">
+                                                    Đã bán 100k
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="sp-goi-y p-2 m-2">
+                        <!-- sản phẩm -->
+                        <div class="sp-goi-y-cov p-2 m-1 flex">
+                            <a href="product/product9.html" class="m-content-sp">
+                                <div style="width: 186px; height: 290px; background-color: aliceblue;" class="san-pham-goi-y-in">
+                                    <div class="sp-pic">
+                                        <img src="	https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lqfnhaateqev9b" alt="">
+                                    </div>
+                                    <div class="sp-content p-2">
+                                        <p class="text-sm">
+                                            Găng tay chơi game Chống Mồ Hôi, Siêu Nhạy, Co Giãn Cực Tốt
+                                        </p>
+                                        <div class="sp-foot-content">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="flex flex-nowrap">
+                                                    <p class="text-rose-600">đ</p>
+                                                    <p class="text-rose-600">1.000</p>
+                                                </div>
+                                                <div style="font-size: 13px;" class="d-flex text-zinc-400">
+                                                    Đã bán 100k
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="sp-goi-y p-2 m-2">
+                        <!-- sản phẩm -->
+                        <div class="sp-goi-y-cov p-2 m-1 flex">
+                            <a href="#" class="m-content-sp">
+                                <div style="width: 186px; height: 290px; background-color: aliceblue;" class="san-pham-goi-y-in">
+                                    <div class="sp-pic">
+                                        <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lshuyyqe2owpad" alt="">
+                                    </div>
+                                    <div class="sp-content p-2">
+                                        <p class="text-sm">
+                                            Đồng hồ đèn Led điện tử phong cách dễ thương dễ xem giờ DH19
+                                        </p>
+                                        <div class="sp-foot-content">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="flex flex-nowrap">
+                                                    <p class="text-rose-600">đ</p>
+                                                    <p class="text-rose-600">1.000</p>
+                                                </div>
+                                                <div style="font-size: 13px;" class="d-flex text-zinc-400">
+                                                    Đã bán 100k
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="sp-goi-y p-2 m-2">
+                        <!-- sản phẩm -->
+                        <div class="sp-goi-y-cov p-2 m-1 flex">
+                            <a href="#" class="m-content-sp">
+                                <div style="width: 186px; height: 290px; background-color: aliceblue;" class="san-pham-goi-y-in">
+                                    <div class="sp-pic">
+                                        <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lshuyyqe2owpad" alt="">
+                                    </div>
+                                    <div class="sp-content p-2">
+                                        <p class="text-sm">
+                                            Đồng hồ đèn Led điện tử phong cách dễ thương dễ xem giờ DH19
+                                        </p>
+                                        <div class="sp-foot-content">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="flex flex-nowrap">
+                                                    <p class="text-rose-600">đ</p>
+                                                    <p class="text-rose-600">1.000</p>
+                                                </div>
+                                                <div style="font-size: 13px;" class="d-flex text-zinc-400">
+                                                    Đã bán 100k
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+
+
+                    <div class="sp-goi-y p-2 m-2">
+                        <!-- sản phẩm -->
+                        <div class="sp-goi-y-cov p-2 m-1 flex">
+                            <a href="#" class="m-content-sp">
+                                <div style="width: 186px; height: 290px; background-color: aliceblue;" class="san-pham-goi-y-in">
+                                    <div class="sp-pic">
+                                        <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lshuyyqe2owpad" alt="">
+                                    </div>
+                                    <div class="sp-content p-2">
+                                        <p class="text-sm">
+                                            Đồng hồ đèn Led điện tử phong cách dễ thương dễ xem giờ DH19
+                                        </p>
+                                        <div class="sp-foot-content">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="flex flex-nowrap">
+                                                    <p class="text-rose-600">đ</p>
+                                                    <p class="text-rose-600">1.000</p>
+                                                </div>
+                                                <div style="font-size: 13px;" class="d-flex text-zinc-400">
+                                                    Đã bán 100k
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+
+
+
+                    
+
+
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="or-foot-line" style="border-bottom: 5px solid #ee4d2d;"></div>
+        <div class="container-fluid pt-4 mt-4 pr-0 mr-0">
+            <div class="text-sm" style="padding-left: 150px; padding-top: 50px; font-size: 13px;">
+                <p class="shopee-mua-gi-cung-co font-bold uppercase pb-4">shopee - gì cũng có, mua hết ở shopee</p>
+                <span>Shopee - ứng dụng mua sắm trực tuyến thú vị, tin cậy, an toàn và miễn phí! Shopee là nền tảng giao dịch trực tuyến hàng đầu ở Đông Nam Á, có trụ sở chính ở Singapore, đã có mặt ở khắp các khu vực </span>
+                <span class="font-bold">Singapore, Malaysia, Indonesia, Thái Lan, Philippines, Đài Loan, Brazil, México & Colombia. </span>
+                <span>Với sự đảm bảo của Shopee, bạn sẽ mua hàng trực tuyến an tâm và nhanh chóng hơn bao giờ hết!</span>
+            </div>
+        </div>
+    </footer>
+    
+
+
+    <script src="main.js"></script>
+</body>
+</html>

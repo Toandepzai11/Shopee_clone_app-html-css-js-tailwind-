@@ -1,0 +1,456 @@
+/* Định dạng cho phần đầu trang (font chữ màu backgropund) */
+.header-main-page {
+    background: #f53d2d;
+    background: linear-gradient(-180deg, #f53d2d, #f63);
+    transition: transform .2s cubic-bezier(.4,0,.2,1);
+    color: white;
+    font-size: small;
+}
+/* Chỉnh phần đầu của header (xây dựng trên thuộc tính của header) */
+.head-basic {
+    font-family: Roboto, Helvetica Neue, Helvetica, Arial, 文泉驛正黑, WenQuanYi Zen Hei, Hiragino Sans GB, 儷黑 Pro, LiHei Pro, Heiti TC, 微軟正黑體, Microsoft JhengHei UI, Microsoft JhengHei, sans-serif;;
+}
+/* LÀM DẤU NGĂN CÁCH GIỮA 2 ĐỐI TƯỢNG (PHẢI CÓ CHUNG TÊN CLASS LÀ ITEM) */
+.item {
+    color: #fff;
+    font-size: .8125rem;
+    font-weight: 300;
+    outline: 0;
+    overflow: visible;
+    padding: .25rem;
+    position: relative;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+}
+
+.item:not(:first-child):after {
+    border-left: 1px solid hsla(0,0%,100%,.22);
+    border-right: 1px solid hsla(0,0%,100%,.22);
+    content: "";
+    height: .9375rem;
+    left: -6px;
+    position: absolute;
+    top: calc(50% - 7px);
+    width: 0
+}
+
+.item:not(:first-child) {
+    margin-left: .625rem
+}
+
+/* Đinh dạng logo */
+.logo {
+    width: 90%;
+    padding: 0;
+    margin: 0;
+}
+/* Định dạng thanh tìm kiếm */
+.search-bar {
+    --focus-indicator-spacing: 3px;
+    align-items: stretch;
+    background: #fff;
+    border-radius: 2px;
+    box-sizing: border-box;
+    display: flex;
+    height: 2.5rem;
+    justify-content: space-between;
+    padding: .1875rem;
+}
+#s-in-bar {
+    border-radius: 2px;
+}
+.btn-s {
+    background: #f53d2d;
+    background: linear-gradient(-180deg, #f53d2d, #f63);
+    transition: transform .2s cubic-bezier(.4,0,.2,1);
+    color: white;
+    font-size: small;
+}
+/* Định dạng gio4r hàng */
+.cart {
+    width: 36px;
+    height: 26px;
+}
+/* .i-h-last {
+    
+} */
+.v-e img{
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 45px;
+    height: 45px;
+}
+h1{
+    color: aqua;
+    font-size: 50px;
+}
+/* phần hoặc trong form ---------hoặc---------- */
+.line {
+    background-color: #dbdbdb;
+    flex: 1;
+    height: 1px;
+    width: 100%;
+}
+.hoac {
+    color: #ccc;
+    font-size: .75rem;
+    padding: 0 16px;
+    text-transform: uppercase;
+}
+/* form đăng kí */
+#register {
+    width: 300px;
+    margin: 0 auto;
+}
+
+#register label {
+    margin-bottom: 5px;
+}
+
+#register input[type="tel"] {
+    width: 100%;
+    padding: 5px;
+}
+#register #nextButton {
+    padding: 5px;
+}
+
+#register #socialLogin {
+    background-color: #f2f2f2;
+}
+
+
+#register #socialLogin button {
+    padding: 5px;
+    margin-bottom: 5px;
+}
+/* nút tiếp theo */
+#nextButton {
+    background: #f53d2d;
+    background: linear-gradient(-180deg, #f53d2d, #f63);
+    color: #f2f2f2;
+}
+/* khi nút bị disible */
+#nextButton:disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+
+}
+#register {
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, .14);
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 400px;
+}
+/* phần chữ bạn cần giúp đỡ */
+.need-help {
+    color: #f63;
+}
+/* cover của form đăng kí */
+.register-signup-cover {
+    background-image: url(https://down-vn.img.susercontent.com/file/sg-11134004-7rd5q-luefss8akuns46);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 0 auto;
+    min-height: 600px;
+    width: 1040px;
+}
+/* form đăng kí */
+.sign-up-cover {
+    width: 100%;
+}
+.sign-up-form {
+    width: 400px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, .14);
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-top: 70px;
+}
+/* phần trên của form */
+.top-up {
+    box-sizing: border-box;
+    min-height: 80px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+/* phần bao quanh của phần trên */
+.top-cover-up {
+    padding: 1.375rem 30px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+/* Chữ đưang kí */
+.text-sign-up {
+    color: #222;
+    font-size: 1.25rem;
+    max-width: 8.5rem;
+    flex-shrink: 0;
+}
+/* phần chính */
+.main-up {
+    overflow: hidden;
+    padding: 0 30px 30px;
+}
+/* phần bao quanh số điện thaoij */
+.cover-phone-num {
+    display: block;
+    unicode-bidi: isolate;
+    margin-bottom: 10px;
+}
+/* số điện thoại */
+.sdt {
+    border: 1px solid rgba(0, 0, 0, .14);
+    border-radius: 2px;
+    box-shadow: inset 0 2px 0 rgba(0, 0, 0, .02);
+    box-sizing: border-box;
+    height: 2.5rem;
+    overflow: hidden;
+    width: 100%;
+    align-items: center;
+    display: flex;
+}
+/* phần nhập số điện thopaij */
+.sdt-in {
+    border: 0;
+    filter: none;
+    flex: 1;
+    flex-shrink: 0;
+    outline: none;
+    padding: .75rem;
+    line-height: normal;
+    color: inherit;
+    font: inherit;
+    margin: 0;
+    padding-block: 1px;
+    padding-inline: 2px;
+}
+/* phần trống để hiện thị chữ đỏ khi người dùng nhập không đủ tghoong tin */
+.auth-err {
+    color: #ff424f;
+    font-size: .75rem;
+    margin: 0;
+    min-height: 1rem;
+    padding: .25rem 0 0;
+    display: block;
+    unicode-bidi: isolate;
+}
+/* nút tiếp thoe */
+.btn-next-up {
+    background-color: #f53d2d;
+    color: #fff;
+    border: 0;
+    width: 100%;
+    justify-content: center;
+    height: 40px;
+    opacity: .7;
+    cursor: not-allowed;
+    margin-bottom: 30px;
+}
+/* làm phần (--------hoặc---------) */
+/* dòng kẻ bên trái */
+.line-left {
+    background-color: #dbdbdb;
+    flex: 1;
+    height: 1px;
+    width: 100%;
+}
+/* chữ hoặc */
+.or {
+    color: #ccc;
+    font-size: .75rem;
+    padding: 0 16px;
+    text-transform: uppercase;
+}
+/* dòng kẻ bên phải */
+.line-right {
+    background-color: #dbdbdb;
+    flex: 1;
+    height: 1px;
+    width: 100%;
+}
+/* phần bao quang phần đồng ý cới chính sách */
+.chinh-sach-cov {
+    color: rgba(0, 0, 0, .87);
+    font-size: 12px;
+    margin-top: 1.5625rem;
+    text-align: center;
+
+}
+/* chữ "chính sách" */
+.chinh-sach {
+    margin-right: .3125rem;
+    padding: 0 1.5625rem;
+}
+/* chữ điều khoản */
+.dieu-khoan {
+    color: #ee4d2d;
+    cursor: pointer;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: initial;
+}
+/* phần bao quanh phần chân của form */
+.foot-up {
+    margin-bottom: 30px;
+    display: block;
+    unicode-bidi: isolate;
+}
+/* phần chân của form (footer signup content) */
+.foot-up-con {
+    font-size: .875rem;
+    color: rgba(0, 0, 0, .26);
+    padding-right: 4px;
+    white-space: pre;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+}
+.dang-nhap{
+    color: #ee4d2d;
+    font-weight: 500;
+}
+.danh-muc {
+    background-color: #ccc;
+}
+.home-category-list {
+    min-height: 18.875rem;
+    margin-top: 1.25rem;
+    background-color: #fff;
+}
+.shopee-header-section__header {
+    background: #fff;
+    height: 3.75rem;
+    border-bottom: 1px solid rgba(0, 0, 0, .05);
+    padding: 0 1.25rem;
+    align-items: center;
+    display: flex;
+}
+.shopee-header-section--simple .shopee-header-section__header__title {
+    color: rgba(0, 0, 0, .54);
+    font-size: 1rem;
+    font-weight: 500;
+}
+.image-pro {
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+.image-item-wrapper {
+    height: 100%;
+    overflow: hidden;
+    touch-action: pan-y;
+}
+.image-items {
+    float: none;
+    height: 151px;
+    width: 120px !important;
+}
+.main {
+    width: 1200px;
+    height: 262px; 
+    /* heigh = 362 nếu làm 2 hành danh muc */
+    background-color: #ffffff;
+}
+.main-out {
+    background-color: #eeeeee;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.head-section-content {
+    background: #fff;
+    height: 3.75rem;
+    border-bottom: 1px solid #4a4a4a;
+    padding: 0 1.25rem;
+    align-items: center;
+    display: flex;
+    width: auto;
+}
+.content {
+
+}
+/* Định dạng hình ảnh các danh mục */
+.img-danh-muc {
+    width: 90%;
+    padding-left: 10px;
+}
+/* các danh mục */
+.content-in {
+    height: 150px;
+    width: 120px; 
+    justify-content: center;
+    align-items: center;
+    border:1px solid #dddcdc;
+}
+.content-in:hover {
+    height: 170px;
+    width: 140px; 
+    justify-content: center;
+    align-items: center;
+    border:1px solid #dddcdc;
+    transition: 0.5s;
+    border-radius: 4px;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, .14);
+}
+/* các danh mục khi khoontg được hover thì sẽ trả về hiện trạng một cách mượt mà, ko bị khựng */
+.content-in:not(:hover) {
+    height: 150px;
+    width: 120px; 
+    justify-content: center;
+    align-items: center;
+    border:1px solid #dddcdc;
+    transition: 0.5s;
+    border-radius: 4px;
+
+}
+/* để sắp xếp theo hàng ngang */
+.content-1 {
+    display: flex;
+}
+/*  Định dạng cho chữ gợi ý hôm nay */
+.goi-y {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: flex;
+    position: relative;
+    max-width: 100%;
+    color: rgb(238, 77, 45);
+    text-transform: uppercase;
+    align-items: center;
+    border-bottom: 5px solid #ee4d2d;
+}
+.sp-pic {
+    width: 186px;
+    height: 186px;
+}
+.sp-goi-y {
+    width: 186px; 
+    height: 290px;
+}
+.san-pham-goi-y-in {
+
+}
+.m-content-sp {
+    border: none;
+}
+.m-content-sp:hover {
+    border: 1px solid red;
+    transition: 0.2s;;
+
+}
+.m-content-sp:not(:hover) {
+    border: none;
+}
